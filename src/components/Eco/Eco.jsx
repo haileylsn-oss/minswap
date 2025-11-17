@@ -28,69 +28,69 @@ const Eco = () => {
         Where the community trades on Cardano.
       </h1>
 
-      {/* Trade Form */}
-      <div className="md:max-w-md mx-auto space-y-4">
-        {/* You Pay Section */}
-        <div className="w-full p-4 border rounded-2xl shadow hover:border-2 hover:p-5 space-y-2">
-          <div className="flex justify-between items-center">
-            <span className="text-sm text-gray-500">You pay</span>
-            <div className="flex space-x-1 text-xs text-gray-500">
-              <button className="px-1 rounded hover:bg-gray-200">Half</button>
-              <button className="px-1 rounded hover:bg-gray-200">Max</button>
-            </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <input
-              type="text"
-              placeholder="0.0"
-              className="flex-1 text-2xl p-2 rounded-full border focus:outline-none"
-            />
-            <button className="flex items-center space-x-1 px-2 py-2 rounded-full bg-gray-200 hover:bg-gray-300">
-              <img
-                src="https://minswap.org/images/assets/cardano.png"
-                alt="Cardano"
-                className="w-6 h-6 rounded-full"
-              />
-              <span>ADA</span>
-              <FaChevronDown />
-            </button>
-          </div>
-        </div>
-
-        {/* Switch Button */}
-        <div className="flex justify-center -my-5">
-          <button className="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
-            <FaPlus className="text-lg" />
-          </button>
-        </div>
-
-        {/* You Receive Section */}
-        <div className="w-full p-4 border rounded-2xl shadow hover:border-2 hover:p-5 space-y-2">
-          <div className="flex justify-between items-center">
-            <span className="text-sm text-gray-500">You receive</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <input
-              type="text"
-              placeholder="0.0"
-              className="flex-1 text-2xl p-2 rounded-full border focus:outline-none"
-            />
-            <button className="flex items-center space-x-1 px-2 py-2 rounded-full bg-gray-200 hover:bg-gray-300">
-              <FaPlus />
-              <span>Select token</span>
-              <FaChevronDown />
-            </button>
-          </div>
-        </div>
-
-        {/* Connect Wallet Button */}
-        <Link to={'/wallet'}
-        ><button className="w-full px-6 mt-4  py-4 rounded-full bg-[#89aaff] text-white text-lg hover:bg-purple-900">
-          Connect wallet
-        </button>
-        </Link>
-        
+     {/* Trade Form */}
+<div className="md:max-w-md mx-auto px-2 space-y-4"> {/* Added px-2 for small screens */}
+  {/* You Pay Section */}
+  <div className="w-full p-4 border rounded-2xl shadow hover:border-2 hover:p-5 space-y-2">
+    <div className="flex justify-between items-center">
+      <span className="text-sm text-gray-500">You pay</span>
+      <div className="flex space-x-1 text-xs text-gray-500">
+        <button className="px-1 rounded hover:bg-gray-200">Half</button>
+        <button className="px-1 rounded hover:bg-gray-200">Max</button>
       </div>
+    </div>
+    <div className="flex items-center gap-2 flex-wrap"> {/* flex-wrap added */}
+      <input
+        type="text"
+        placeholder="0.0"
+        className="flex-1 text-2xl p-2 rounded-full border focus:outline-none min-w-0" 
+      />
+      <button className="flex items-center space-x-1 px-2 py-2 rounded-full bg-gray-200 hover:bg-gray-300 min-w-0">
+        <img
+          src="https://minswap.org/images/assets/cardano.png"
+          alt="Cardano"
+          className="w-6 h-6 rounded-full"
+        />
+        <span className="truncate">ADA</span> {/* prevent overflow text */}
+        <FaChevronDown />
+      </button>
+    </div>
+  </div>
+
+  {/* Switch Button */}
+  <div className="flex justify-center -my-5">
+    <button className="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
+      <FaPlus className="text-lg" />
+    </button>
+  </div>
+
+  {/* You Receive Section */}
+  <div className="w-full p-4 border rounded-2xl shadow hover:border-2 hover:p-5 space-y-2">
+    <div className="flex justify-between items-center">
+      <span className="text-sm text-gray-500">You receive</span>
+    </div>
+    <div className="flex items-center gap-2 flex-wrap">
+      <input
+        type="text"
+        placeholder="0.0"
+        className="flex-1 text-2xl p-2 rounded-full border focus:outline-none min-w-0"
+      />
+      <button className="flex items-center space-x-1 px-2 py-2 rounded-full bg-gray-200 hover:bg-gray-300 min-w-0">
+        <FaPlus />
+        <span className="truncate">Select token</span>
+        <FaChevronDown />
+      </button>
+    </div>
+  </div>
+
+  {/* Connect Wallet Button */}
+  <Link to={'/wallet'}>
+    <button className="w-full px-6 mt-4 py-4 rounded-full bg-[#89aaff] text-white text-lg hover:bg-purple-900">
+      Connect wallet
+    </button>
+  </Link>
+</div>
+
 
       {/* Description */}
       <div className="text-center text-gray-500 text-md md:max-w-sm mx-auto">
