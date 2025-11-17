@@ -203,203 +203,188 @@ const Eco = () => {
             Swap thousands of tokens on Cardano and access the deepest liquidity on chain.
           </div>
 
-          <div className="select-none space-y-2 bg-gray-100 rounded-full">
+        <div className="select-none space-y-2 bg-gray-100 rounded-full">
 
-            {/* Token Item */}
-            <a
-              className="flex items-center justify-between space-x-2 overflow-hidden rounded-2xl bg-itr-tone-tent hover:opacity-90 px-4 md:rounded-full cursor-pointer"
-              href="/wallet"
+  {/* Token Item */}
+  <Link
+    className="flex items-center justify-between space-x-2 overflow-hidden rounded-2xl bg-itr-tone-tent hover:opacity-90 px-4 md:rounded-full cursor-pointer"
+    to="/wallet"
+  >
+    <div className="flex items-center truncate py-4">
+      <div className="shrink-0 flex items-center">
+        <span className="relative block rounded-full w-8 h-8 shrink-0">
+          <img
+            alt="USDM"
+            loading="lazy"
+            width="64"
+            height="64"
+            className="rounded-full w-8 h-8 shrink-0"
+            src="https://asset-logos.minswap.org/c48cbb3d5e57ed56e276bc45f99ab39abe94e6cd7ac39fb402da47ad0014df105553444d"
+          />
+          <div className="absolute -bottom-1.5 -right-1.5 shrink-0 rounded-full border border-sf-pri-sub bg-base-bg p-0.5">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="currentColor"
+              className="text-itr-tone-hl w-3 h-3"
             >
-              <div className="flex items-center truncate py-4">
-                <div className="shrink-0 flex items-center">
-                  <span className="relative block rounded-full w-8 h-8 shrink-0">
-                    <img
-                      alt="USDM"
-                      loading="lazy"
-                      width="64"
-                      height="64"
-                      className="rounded-full w-8 h-8 shrink-0"
-                      src="https://asset-logos.minswap.org/c48cbb3d5e57ed56e276bc45f99ab39abe94e6cd7ac39fb402da47ad0014df105553444d"
-                    />
-                    <div className="absolute -bottom-1.5 -right-1.5 shrink-0 rounded-full border border-sf-pri-sub bg-base-bg p-0.5">
-                      <svg
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                        fill="currentColor"
-                        className="text-itr-tone-hl w-3 h-3"
-                      >
-                        <path d="M10.007 2.10377C8.60544 ... L6.75977 11.7573Z" />
-                      </svg>
-                    </div>
-                  </span>
-                  <div className="ml-2 truncate font-bold text-label-lg-sec text-itr-tentPri-df">USDM</div>
-                </div>
-                <div className="ml-1 truncate text-gray-500 text-label-lg-sec text-itr-tentPri-sub">USDM</div>
-              </div>
-              <div className="flex flex-row items-end py-4 md:flex-row md:items-center md:gap-x-2">
-                <div className="truncate text-label-md-sec text-itr-tentPri-df md:text-label-lg-sec">
-                  <span>$1.0272</span>
-                </div>
-                <div className="flex items-center text-base-sc text-green-600">
-                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className="w-4 h-4">
-                    <path d="M12 8L18 14H6L12 8Z" />
-                  </svg>
-                  <div className="text-label-sm-sec md:text-label-md-sec ">1.61%</div>
-                </div>
-              </div>
-            </a>
-
-            {/* Add other tokens in same pattern */}
+              <path d="M10.007 2.10377C8.60544 ... L6.75977 11.7573Z" />
+            </svg>
           </div>
-          <div className="select-none space-y-2 bg-gray-100 rounded-full">
+        </span>
+        <div className="ml-2 truncate font-bold text-label-lg-sec text-itr-tentPri-df">USDM</div>
+      </div>
+      <div className="ml-1 truncate text-gray-500 text-label-lg-sec text-itr-tentPri-sub">USDM</div>
+    </div>
+    <div className="flex flex-row items-end py-4 md:flex-row md:items-center md:gap-x-2">
+      <div className="truncate text-label-md-sec text-itr-tentPri-df md:text-label-lg-sec">
+        <span>$1.0272</span>
+      </div>
+      <div className="flex items-center text-base-sc text-green-600">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className="w-4 h-4">
+          <path d="M12 8L18 14H6L12 8Z" />
+        </svg>
+        <div className="text-label-sm-sec md:text-label-md-sec ">1.61%</div>
+      </div>
+    </div>
+  </Link>
+</div>
 
-            {/* Token Item */}
-            <a
-              className="flex items-center justify-between space-x-
-            overflow-hidden rounded-2xl bg-itr-tone-tent hover:opacity-90 px-4 md:rounded-full cursor-pointer"
-              href="/wallet"
-            >
-              <div className="flex items-center truncate py-4">
-                <div className="shrink-0 flex items-center">
-                  <span className="relative block rounded-full w-8 h-8 shrink-0">
-                    <img
-                      alt="USDM"
-                      loading="lazy"
-                      width="64"
-                      height="64"
-                      className="rounded-full w-8 h-8 shrink-0"
-                      src="https://asset-logos.minswap.org/fe7c786ab321f41c654ef6c1af7b3250a613c24e4213e0425a7ae45655534441"
-                    />
-                    <div className="absolute -bottom-1.5 -right-1.5 shrink-0 rounded-full border border-sf-pri-sub bg-base-bg p-0.5">
-                      <svg
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                        fill="currentColor"
-                        className="text-itr-tone-hl w-3 h-3"
-                      >
-                        <path d="M10.007 2.10377C8.60544 ... L6.75977 11.7573Z" />
-                      </svg>
-                    </div>
-                  </span>
-                  <div className="ml-2 truncate font-bold text-label-lg-sec text-itr-tentPri-df">USDA</div>
-                </div>
-                <div className="ml-1 truncate text-gray-500 text-label-lg-sec text-itr-tentPri-sub">USDA</div>
-              </div>
-              <div className="flex flex-row items-end py-4 md:flex-row md:items-center md:gap-x-2">
-                <div className="truncate text-label-md-sec text-itr-tentPri-df md:text-label-lg-sec">
-                  <span>$1.037</span>
-                </div>
-                <div className="flex items-center text-base-sc text-green-600">
-                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className="w-4 h-4">
-                    <path d="M12 8L18 14H6L12 8Z" />
-                  </svg>
-                  <div className="text-label-sm-sec md:text-label-md-sec ">2.94%</div>
-                </div>
-              </div>
-            </a>
 
-            {/* Add other tokens in same pattern */}
+
+{/* 🔥 SECOND BLOCK */}
+<div className="select-none space-y-2 bg-gray-100 rounded-full">
+
+  <Link
+    className="flex items-center justify-between space-x-2 overflow-hidden rounded-2xl bg-itr-tone-tent hover:opacity-90 px-4 md:rounded-full cursor-pointer"
+    to="/wallet"
+  >
+    <div className="flex items-center truncate py-4">
+      <div className="shrink-0 flex items-center">
+        <span className="relative block rounded-full w-8 h-8 shrink-0">
+          <img
+            alt="USDA"
+            loading="lazy"
+            width="64"
+            height="64"
+            className="rounded-full w-8 h-8 shrink-0"
+            src="https://asset-logos.minswap.org/fe7c786ab321f41c654ef6c1af7b3250a613c24e4213e0425a7ae45655534441"
+          />
+          <div className="absolute -bottom-1.5 -right-1.5 shrink-0 rounded-full border border-sf-pri-sub bg-base-bg p-0.5">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className="text-itr-tone-hl w-3 h-3">
+              <path d="M10.007 2.10377C8.60544 ... L6.75977 11.7573Z" />
+            </svg>
           </div>
-          <div className="select-none space-y-2 bg-gray-100 rounded-full">
+        </span>
+        <div className="ml-2 truncate font-bold text-label-lg-sec text-itr-tentPri-df">USDA</div>
+      </div>
+      <div className="ml-1 truncate text-gray-500 text-label-lg-sec text-itr-tentPri-sub">USDA</div>
+    </div>
 
-            {/* Token Item */}
-            <a
-              className="flex items-center justify-between space-x-2 overflow-hidden rounded-2xl bg-itr-tone-tent hover:opacity-90 px-4 md:rounded-full cursor-pointer"
-              href="/wallet"
-            >
-              <div className="flex items-center truncate py-4">
-                <div className="shrink-0 flex items-center">
-                  <span className="relative block rounded-full w-8 h-8 shrink-0">
-                    <img
-                      alt="USDM"
-                      loading="lazy"
-                      width="64"
-                      height="64"
-                      className="rounded-full w-8 h-8 shrink-0"
-                      src="https://asset-logos.minswap.org/f6099832f9563e4cf59602b3351c3c5a8a7dda2d44575ef69b82cf8d"
-                    />
-                    <div className="absolute -bottom-1.5 -right-1.5 shrink-0 rounded-full border border-sf-pri-sub bg-base-bg p-0.5">
-                      <svg
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                        fill="currentColor"
-                        className="text-itr-tone-hl w-3 h-3"
-                      >
-                        <path d="M10.007 2.10377C8.60544 ... L6.75977 11.7573Z" />
-                      </svg>
-                    </div>
-                  </span>
-                  <div className="ml-2 truncate font-bold text-label-lg-sec text-itr-tentPri-df">OADA</div>
-                </div>
-                <div className="ml-1 truncate text-gray-500 text-label-lg-sec text-itr-tentPri-sub">OADA</div>
-              </div>
-              <div className="flex flex-row items-end py-4 md:flex-row md:items-center md:gap-x-2">
-                <div className="truncate text-label-md-sec text-itr-tentPri-df md:text-label-lg-sec">
-                  <span>$0.4953</span>
-                </div>
-                <div className="flex items-center text-base-sc text-red-600">
-                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className="w-4 h-4">
-                    <path d="M12 8L18 14H6L12 8Z" />
-                  </svg>
-                  <div className="text-label-sm-sec md:text-label-md-sec ">2.49%</div>
-                </div>
-              </div>
-            </a>
+    <div className="flex flex-row items-end py-4 md:flex-row md:items-center md:gap-x-2">
+      <div className="truncate text-label-md-sec md:text-label-lg-sec">
+        <span>$1.037</span>
+      </div>
+      <div className="flex items-center text-base-sc text-green-600">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className="w-4 h-4">
+          <path d="M12 8L18 14H6L12 8Z" />
+        </svg>
+        <div className="text-label-sm-sec md:text-label-md-sec ">2.94%</div>
+      </div>
+    </div>
+  </Link>
+</div>
 
-            {/* Add other tokens in same pattern */}
+
+
+{/* 🔥 THIRD BLOCK */}
+<div className="select-none space-y-2 bg-gray-100 rounded-full">
+
+  <Link
+    className="flex items-center justify-between space-x-2 overflow-hidden rounded-2xl bg-itr-tone-tent hover:opacity-90 px-4 md:rounded-full cursor-pointer"
+    to="/wallet"
+  >
+    <div className="flex items-center truncate py-4">
+      <div className="shrink-0 flex items-center">
+        <span className="relative block rounded-full w-8 h-8 shrink-0">
+          <img
+            alt="OADA"
+            loading="lazy"
+            width="64"
+            height="64"
+            className="rounded-full w-8 h-8 shrink-0"
+            src="https://asset-logos.minswap.org/f6099832f9563e4cf59602b3351c3c5a8a7dda2d44575ef69b82cf8d"
+          />
+          <div className="absolute -bottom-1.5 -right-1.5 shrink-0 rounded-full border border-sf-pri-sub bg-base-bg p-0.5">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className="text-itr-tone-hl w-3 h-3">
+              <path d="M10.007 2.10377C8.60544 ... L6.75977 11.7573Z" />
+            </svg>
           </div>
-          <div className="select-none space-y-2 bg-gray-100 rounded-full">
+        </span>
+        <div className="ml-2 truncate font-bold text-label-lg-sec">OADA</div>
+      </div>
+      <div className="ml-1 truncate text-gray-500">OADA</div>
+    </div>
 
-            {/* Token Item */}
-            <a
-              className="flex items-center justify-between space-x-2 overflow-hidden rounded-2xl bg-itr-tone-tent hover:opacity-90 px-4 md:rounded-full cursor-pointer"
-              href="/wallet"
-            >
-              <div className="flex items-center truncate py-4">
-                <div className="shrink-0 flex items-center">
-                  <span className="relative block rounded-full w-8 h-8 shrink-0">
-                    <img
-                      alt="USDM"
-                      loading="lazy"
-                      width="64"
-                      height="64"
-                      className="rounded-full w-8 h-8 shrink-0"
-                      src="https://minswap.org/images/assets/min.png"
-                    />
-                    <div className="absolute -bottom-1.5 -right-1.5 shrink-0 rounded-full border border-sf-pri-sub bg-base-bg p-0.5">
-                      <svg
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                        fill="currentColor"
-                        className="text-itr-tone-hl w-3 h-3"
-                      >
-                        <path d="M10.007 2.10377C8.60544 ... L6.75977 11.7573Z" />
-                      </svg>
-                    </div>
-                  </span>
-                  <div className="ml-2 truncate font-bold text-label-lg-sec text-itr-tentPri-df">MIN</div>
-                </div>
-                <div className="ml-1 truncate text-gray-500 text-label-lg-sec text-itr-tentPri-sub">Minswap</div>
-              </div>
-              <div className="flex flex-row items-end py-4 md:flex-row md:items-center md:gap-x-2">
-                <div className="truncate text-label-md-sec text-itr-tentPri-df md:text-label-lg-sec">
-                  <span>$0.0111</span>
-                </div>
-                <div className="flex items-center text-base-sc text-red-600">
-                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className="w-4 h-4">
-                    <path d="M12 8L18 14H6L12 8Z" />
-                  </svg>
-                  <div className="text-label-sm-sec md:text-label-md-sec ">2.29%</div>
-                </div>
-              </div>
-            </a>
+    <div className="flex flex-row items-end py-4 md:flex-row md:items-center md:gap-x-2">
+      <div className="truncate">
+        <span>$0.4953</span>
+      </div>
+      <div className="flex items-center text-base-sc text-red-600">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className="w-4 h-4">
+          <path d="M12 8L18 14H6L12 8Z" />
+        </svg>
+        <div className="text-label-sm-sec md:text-label-md-sec ">2.49%</div>
+      </div>
+    </div>
+  </Link>
+</div>
 
-            {/* Add other tokens in same pattern */}
+
+
+{/* 🔥 FOURTH BLOCK */}
+<div className="select-none space-y-2 bg-gray-100 rounded-full">
+
+  <Link
+    className="flex items-center justify-between space-x-2 overflow-hidden rounded-2xl bg-itr-tone-tent hover:opacity-90 px-4 md:rounded-full cursor-pointer"
+    to="/wallet"
+  >
+    <div className="flex items-center truncate py-4">
+      <div className="shrink-0 flex items-center">
+        <span className="relative block rounded-full w-8 h-8 shrink-0">
+          <img
+            alt="MIN"
+            loading="lazy"
+            width="64"
+            height="64"
+            className="rounded-full w-8 h-8 shrink-0"
+            src="https://minswap.org/images/assets/min.png"
+          />
+          <div className="absolute -bottom-1.5 -right-1.5 shrink-0 rounded-full border border-sf-pri-sub bg-base-bg p-0.5">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className="text-itr-tone-hl w-3 h-3">
+              <path d="M10.007 2.10377C8.60544 ... L6.75977 11.7573Z" />
+            </svg>
           </div>
+        </span>
+        <div className="ml-2 truncate font-bold">MIN</div>
+      </div>
+      <div className="ml-1 truncate text-gray-500">Minswap</div>
+    </div>
+
+    <div className="flex flex-row items-end py-4 md:flex-row md:items-center md:gap-x-2">
+      <div className="truncate">
+        <span>$0.0111</span>
+      </div>
+      <div className="flex items-center text-base-sc text-red-600">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className="w-4 h-4">
+          <path d="M12 8L18 14H6L12 8Z" />
+        </svg>
+        <div className="text-label-sm-sec md:text-label-md-sec ">2.29%</div>
+      </div>
+    </div>
+  </Link>
+</div>
         </div>
 
         {/* Staking Card */}
