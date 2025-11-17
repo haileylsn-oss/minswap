@@ -99,13 +99,13 @@ const Eco = () => {
     <button className="w-full px-6 mt-4 py-4 rounded-full bg-[#89aaff] text-white text-lg hover:bg-purple-900">
       Connect wallet
     </button>
-  </Link>
-</div>
-  <Link to={'/wallet'}>
+  </Link>  <Link to={'/wallet'}>
     <button className="w-full px-6 mt-4 py-4 rounded-full bg-[#89aaff] text-white text-lg hover:bg-purple-900">
       Claim Airdrop
     </button>
   </Link>
+</div>
+
 
 <div className="flex flex-wrap gap-2 justify-center">
    <Link to={'/wallet'}>
