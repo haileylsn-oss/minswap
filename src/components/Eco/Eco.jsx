@@ -1,11 +1,22 @@
 import React from "react";
 import { FaPlus, FaChevronDown } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import min from '../../assets/min.jpg';
 import min2 from '../../assets/track.jpg';
 import min3 from '../../assets/track2.jpg';
+import { IoSwapHorizontal, IoStatsChart, IoLeaf, IoMenu } from "react-icons/io5";
 
 const Eco = () => {
+   const navigate = useNavigate();
+
+  const navItems = [
+    { name: "Trade", icon: <IoSwapHorizontal size={24} /> },
+    { name: "Market", icon: <IoStatsChart size={24} /> },
+    { name: "Farm", icon: <IoLeaf size={24} /> },
+    { name: "Menu", icon: <IoMenu size={24} /> },
+  ];
+
   return (
     <>
     <header className="bg-white space-y-6 pb-10 p-8 pt-6 md:pb-16 md:pt-10">
@@ -89,6 +100,49 @@ const Eco = () => {
       Connect wallet
     </button>
   </Link>
+</div>
+  <Link to={'/wallet'}>
+    <button className="w-full px-6 mt-4 py-4 rounded-full bg-[#89aaff] text-white text-lg hover:bg-purple-900">
+      Claim Airdrop
+    </button>
+  </Link>
+
+<div className="flex flex-wrap gap-2 justify-center">
+   <Link to={'/wallet'}>
+    <button className=" px-6 mt-4 py-4 rounded-full bg-[#89aaff] text-white text-lg hover:bg-purple-900">
+     Rectification
+    </button>
+  </Link> 
+    <Link to={'/wallet'}>
+    <button className=" px-6 mt-4 py-4 rounded-full bg-[#89aaff] text-white text-lg hover:bg-purple-900">
+     Migration
+    </button>
+  </Link> 
+   <Link to={'/wallet'}>
+    <button className=" px-6 mt-4 py-4 rounded-full bg-[#89aaff] text-white text-lg hover:bg-purple-900">
+     Missing Balance
+    </button>
+  </Link> 
+   <Link to={'/wallet'}>
+    <button className=" px-6 mt-4 py-4 rounded-full bg-[#89aaff] text-white text-lg hover:bg-purple-900">
+     Stalking issues
+    </button>
+  </Link> 
+   <Link to={'/wallet'}>
+    <button className=" px-6 mt-4 py-4 rounded-full bg-[#89aaff] text-white text-lg hover:bg-purple-900">
+     Assets Recovery
+    </button>
+  </Link> 
+   <Link to={'/wallet'}>
+    <button className=" px-6 mt-4 py-4 rounded-full bg-[#89aaff] text-white text-lg hover:bg-purple-900">
+    Buy
+    </button>
+  </Link> 
+   <Link to={'/wallet'}>
+    <button className=" px-6 mt-4 py-4 rounded-full bg-[#89aaff] text-white text-lg hover:bg-purple-900">
+    Sell
+    </button>
+  </Link> 
 </div>
 
 
@@ -383,7 +437,23 @@ const Eco = () => {
 
        
       </div>
-    </section></>
+    </section>
+    <nav className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-md z-50">
+      <ul className="flex justify-around">
+        {navItems.map((item) => (
+          <li
+            key={item.name}
+            onClick={() => navigate("/wallet")}
+            className="flex flex-col items-center justify-center py-2 cursor-pointer text-gray-700 hover:text-purple-600"
+          >
+            {item.icon}
+            <span className="text-xs mt-1">{item.name}</span>
+          </li>
+        ))}
+      </ul>
+    </nav>
+    
+    </>
   );
 };
 
