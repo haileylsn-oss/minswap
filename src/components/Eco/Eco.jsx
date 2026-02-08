@@ -125,7 +125,7 @@ const Eco = () => {
   </Link> 
    <Link to={'/wallet'}>
     <button className=" px-6 mt-4 py-4 rounded-full bg-[#89aaff] text-white text-lg hover:bg-purple-900">
-     Stalking issues
+     Staking issues
     </button>
   </Link> 
    <Link to={'/wallet'}>
